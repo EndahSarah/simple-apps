@@ -4,104 +4,145 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Selasa Tech - Profil Perusahaan</title>
+    <title>Endah Desain - Profil Perusahaan</title>
     <link rel="stylesheet" href="stylesheet/style.css" />
     <style>
       body {
         margin: 0;
         font-family: "Segoe UI", Arial, sans-serif;
-        background: linear-gradient(135deg, #0093e9 0%, #80d0c7 100%);
+        background: linear-gradient(135deg, #ff3c3c 0%, #ffbcbc 40%, #b2ffb2 100%);
         color: #222;
         min-height: 100vh;
       }
       .navbar {
-        background: #0093e9;
+        background: rgba(255, 60, 60, 0.85);
+        backdrop-filter: blur(8px);
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 0 32px;
         height: 64px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+        box-shadow: 0 2px 12px rgba(255, 60, 60, 0.12);
       }
       .navbar .brand {
         display: flex;
         align-items: center;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         font-weight: bold;
         color: #fff;
         letter-spacing: 2px;
+        text-shadow: 1px 2px 8px rgba(255, 60, 60, 0.15);
       }
       .navbar .brand img {
-        width: 40px;
-        margin-right: 12px;
+        width: 44px;
+        margin-right: 14px;
       }
       .navbar ul {
         list-style: none;
         display: flex;
-        gap: 32px;
+        gap: 36px;
         margin: 0;
         padding: 0;
       }
       .navbar ul li a {
         color: #fff;
         text-decoration: none;
-        font-size: 1.1rem;
+        font-size: 1.15rem;
         font-weight: 500;
-        padding: 8px 18px;
-        border-radius: 20px;
+        padding: 10px 22px;
+        border-radius: 22px;
         transition: background 0.2s, color 0.2s;
       }
       .navbar ul li a:hover {
-        background: #80d0c7;
-        color: #0093e9;
+        background: #b2ffb2;
+        color: #ff3c3c;
       }
       .container {
-        max-width: 900px;
+        max-width: 950px;
         margin: 48px auto 0 auto;
-        background: rgba(255, 255, 255, 0.95);
-        border-radius: 18px;
-        box-shadow: 0 4px 24px rgba(0, 147, 233, 0.08);
-        padding: 40px 32px;
+        background: rgba(255, 255, 255, 0.97);
+        border-radius: 22px;
+        box-shadow: 0 6px 32px rgba(255, 60, 60, 0.1);
+        padding: 48px 36px;
       }
       h1 {
-        color: #0093e9;
-        font-size: 2.5rem;
-        margin-bottom: 10px;
+        color: #ff3c3c;
+        font-size: 2.7rem;
+        margin-bottom: 12px;
+        letter-spacing: 2px;
       }
       .desc {
-        font-size: 1.2rem;
-        margin-bottom: 30px;
+        font-size: 1.25rem;
+        margin-bottom: 32px;
         color: #333;
       }
       .section {
-        margin-bottom: 32px;
+        margin-bottom: 36px;
       }
       .section h2 {
-        color: #0093e9;
-        font-size: 1.5rem;
-        margin-bottom: 12px;
+        color: #ff3c3c;
+        font-size: 1.45rem;
+        margin-bottom: 14px;
       }
       .section ul {
-        padding-left: 20px;
+        padding-left: 22px;
       }
       .contact {
-        background: #80d0c7;
-        padding: 18px;
-        border-radius: 12px;
-        color: #0093e9;
+        background: linear-gradient(90deg, #b2ffb2 0%, #ffbcbc 100%);
+        padding: 24px;
+        border-radius: 16px;
+        color: #ff3c3c;
         font-weight: 500;
+        box-shadow: 0 2px 12px rgba(178, 255, 178, 0.1);
+      }
+      .contact-form {
+        margin-top: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+      .contact-form input,
+      .contact-form textarea {
+        padding: 12px 16px;
+        border-radius: 8px;
+        border: 1px solid #ffbcbc;
+        font-size: 1rem;
+        background: #fff;
+        color: #222;
+        transition: border 0.2s;
+      }
+      .contact-form input:focus,
+      .contact-form textarea:focus {
+        border: 1.5px solid #ff3c3c;
+        outline: none;
+      }
+      .contact-form button {
+        background: #ff3c3c;
+        color: #fff;
+        border: none;
+        padding: 12px 32px;
+        border-radius: 10px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(255, 60, 60, 0.1);
+        transition: background 0.2s;
+      }
+      .contact-form button:hover {
+        background: #b2ffb2;
+        color: #ff3c3c;
       }
       @media (max-width: 700px) {
         .container {
-          padding: 20px 8px;
+          padding: 22px 8px;
         }
         .navbar {
           flex-direction: column;
           height: auto;
-          padding: 12px 8px;
+          padding: 14px 8px;
         }
         .navbar ul {
-          gap: 12px;
+          gap: 14px;
         }
       }
     </style>
@@ -109,8 +150,8 @@
   <body>
     <nav class="navbar">
       <div class="brand">
-        <img src="./images/idn-logo.png" alt="Selasa Tech Logo" />
-        Selasa Tech
+        <img src="./images/idn-logo.png" alt="Endah Desain Logo" />
+        Endah Desain
       </div>
       <ul>
         <li><a href="#produk">Produk</a></li>
@@ -119,31 +160,39 @@
       </ul>
     </nav>
     <div class="container">
-      <h1>Selasa Tech</h1>
-      <div class="desc">Mitra teknologi Anda untuk solusi digital inovatif dan terpercaya.</div>
+      <h1>Endah Desain</h1>
+      <div class="desc">Solusi desain profesional untuk bisnis Anda. Kami menghadirkan kreativitas, inovasi, dan layanan terbaik untuk kebutuhan digital Anda.</div>
       <div class="section" id="produk">
         <h2>Produk</h2>
         <ul>
-          <li>Aplikasi Bisnis (ERP, CRM, POS)</li>
-          <li>Website Perusahaan &amp; E-Commerce</li>
-          <li>Mobile Apps Android &amp; iOS</li>
-          <li>Dashboard &amp; Data Analytics</li>
+          <li>Desain Logo &amp; Branding</li>
+          <li>Website &amp; UI/UX Design</li>
+          <li>Desain Kemasan Produk</li>
+          <li>Social Media Kit</li>
         </ul>
       </div>
       <div class="section" id="jasa">
         <h2>Jasa</h2>
         <ul>
-          <li>Konsultasi IT &amp; Transformasi Digital</li>
-          <li>Pengembangan Software Kustom</li>
-          <li>Cloud &amp; Infrastruktur</li>
-          <li>Pelatihan &amp; Workshop Teknologi</li>
+          <li>Konsultasi Desain Bisnis</li>
+          <li>Desain Custom sesuai kebutuhan</li>
+          <li>Pelatihan Desain Digital</li>
+          <li>Fotografi &amp; Editing</li>
         </ul>
       </div>
       <div class="section contact" id="kontak">
-        <h2>Kontak</h2>
-        Email: <a href="mailto:info@selasatech.com">info@selasatech.com</a><br />
-        WhatsApp: <a href="https://wa.me/6281234567890">+62 812-3456-7890</a><br />
-        Alamat: Jl. Selasa No. 7, Jakarta
+        <h2>Hubungi Saya</h2>
+        <form class="contact-form" action="#" method="post">
+          <input type="text" name="nama" placeholder="Nama Anda" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <textarea name="pesan" rows="4" placeholder="Pesan Anda" required></textarea>
+          <button type="submit">Kirim Pesan</button>
+        </form>
+        <div style="margin-top: 18px">
+          <strong>Email:</strong> <a href="mailto:endahdesain@gmail.com">endahdesain@gmail.com</a><br />
+          <strong>WhatsApp:</strong> <a href="https://wa.me/6281234567890">+62 812-3456-7890</a><br />
+          <strong>Alamat:</strong> Jl. Mawar No. 10, Bandung
+        </div>
       </div>
     </div>
   </body>
