@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'sever1-endah' }
+    agent { label 'server1-endah' }
 
     stages {
         stage('Pull SCM') {
