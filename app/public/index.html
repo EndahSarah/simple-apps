@@ -1,14 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Training DevOps</title>
-    <link rel="stylesheet" href="stylesheet/style.css">
-</head>
-<body>
-    <img class="logo" src="./images/idn-logo.png" alt="idn-logo">
-     <h1>Belajar Devops</h1>
-</body>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selasa Tech - Profil Perusahaan</title>
+    <link rel="stylesheet" href="stylesheet/style.css" />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: linear-gradient(135deg, #0093e9 0%, #80d0c7 100%);
+        color: #222;
+        min-height: 100vh;
+      }
+      .navbar {
+        background: #0093e9;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 32px;
+        height: 64px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+      }
+      .navbar .brand {
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #fff;
+        letter-spacing: 2px;
+      }
+      .navbar .brand img {
+        width: 40px;
+        margin-right: 12px;
+      }
+      .navbar ul {
+        list-style: none;
+        display: flex;
+        gap: 32px;
+        margin: 0;
+        padding: 0;
+      }
+      .navbar ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-weight: 500;
+        padding: 8px 18px;
+        border-radius: 20px;
+        transition: background 0.2s, color 0.2s;
+      }
+      .navbar ul li a:hover {
+        background: #80d0c7;
+        color: #0093e9;
+      }
+      .container {
+        max-width: 900px;
+        margin: 48px auto 0 auto;
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 18px;
+        box-shadow: 0 4px 24px rgba(0, 147, 233, 0.08);
+        padding: 40px 32px;
+      }
+      h1 {
+        color: #0093e9;
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+      }
+      .desc {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        color: #333;
+      }
+      .section {
+        margin-bottom: 32px;
+      }
+      .section h2 {
+        color: #0093e9;
+        font-size: 1.5rem;
+        margin-bottom: 12px;
+      }
+      .section ul {
+        padding-left: 20px;
+      }
+      .contact {
+        background: #80d0c7;
+        padding: 18px;
+        border-radius: 12px;
+        color: #0093e9;
+        font-weight: 500;
+      }
+      @media (max-width: 700px) {
+        .container {
+          padding: 20px 8px;
+        }
+        .navbar {
+          flex-direction: column;
+          height: auto;
+          padding: 12px 8px;
+        }
+        .navbar ul {
+          gap: 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="brand">
+        <img src="./images/idn-logo.png" alt="Selasa Tech Logo" />
+        Selasa Tech
+      </div>
+      <ul>
+        <li><a href="#produk">Produk</a></li>
+        <li><a href="#jasa">Jasa</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <h1>Selasa Tech</h1>
+      <div class="desc">Mitra teknologi Anda untuk solusi digital inovatif dan terpercaya.</div>
+      <div class="section" id="produk">
+        <h2>Produk</h2>
+        <ul>
+          <li>Aplikasi Bisnis (ERP, CRM, POS)</li>
+          <li>Website Perusahaan &amp; E-Commerce</li>
+          <li>Mobile Apps Android &amp; iOS</li>
+          <li>Dashboard &amp; Data Analytics</li>
+        </ul>
+      </div>
+      <div class="section" id="jasa">
+        <h2>Jasa</h2>
+        <ul>
+          <li>Konsultasi IT &amp; Transformasi Digital</li>
+          <li>Pengembangan Software Kustom</li>
+          <li>Cloud &amp; Infrastruktur</li>
+          <li>Pelatihan &amp; Workshop Teknologi</li>
+        </ul>
+      </div>
+      <div class="section contact" id="kontak">
+        <h2>Kontak</h2>
+        Email: <a href="mailto:info@selasatech.com">info@selasatech.com</a><br />
+        WhatsApp: <a href="https://wa.me/6281234567890">+62 812-3456-7890</a><br />
+        Alamat: Jl. Selasa No. 7, Jakarta
+      </div>
+    </div>
+  </body>
 </html>
