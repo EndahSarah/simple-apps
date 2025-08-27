@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Endah Desain - Profil Perusahaan</title>
+    <title>Endah Desain - Profil Perusahaanku</title>
     <link rel="stylesheet" href="stylesheet/style.css" />
     <style>
       body {
@@ -132,6 +132,59 @@
         background: #b2ffb2;
         color: #ff3c3c;
       }
+      .price-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        margin-top: 18px;
+        margin-bottom: 18px;
+        justify-content: center;
+      }
+      .price-card {
+        background: linear-gradient(135deg, #b2ffb2 0%, #ffbcbc 100%);
+        border-radius: 16px;
+        box-shadow: 0 4px 18px rgba(255, 60, 60, 0.13);
+        padding: 28px 24px;
+        min-width: 220px;
+        max-width: 260px;
+        text-align: center;
+        color: #ff3c3c;
+        font-weight: 500;
+        position: relative;
+        transition: transform 0.3s, box-shadow 0.3s;
+        animation: fadeInUp 1s;
+      }
+      .price-card:hover {
+        transform: translateY(-10px) scale(1.04);
+        box-shadow: 0 8px 32px rgba(255, 60, 60, 0.18);
+      }
+      .price-card h3 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+        color: #ff3c3c;
+      }
+      .price {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #009e60;
+        margin-bottom: 8px;
+      }
+      .price-desc {
+        font-size: 1rem;
+        color: #333;
+        margin-bottom: 0;
+      }
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
       @media (max-width: 700px) {
         .container {
           padding: 22px 8px;
@@ -143,6 +196,10 @@
         }
         .navbar ul {
           gap: 14px;
+        }
+        .price-list {
+          flex-direction: column;
+          gap: 16px;
         }
       }
     </style>
@@ -179,6 +236,28 @@
           <li>Pelatihan Desain Digital</li>
           <li>Fotografi &amp; Editing</li>
         </ul>
+        <div class="price-list">
+          <div class="price-card">
+            <h3>Desain Logo</h3>
+            <div class="price">Rp 500.000</div>
+            <div class="price-desc">Logo profesional, 3 konsep, revisi 2x</div>
+          </div>
+          <div class="price-card">
+            <h3>Desain Kemasan</h3>
+            <div class="price">Rp 700.000</div>
+            <div class="price-desc">Desain kemasan produk, file siap cetak</div>
+          </div>
+          <div class="price-card">
+            <h3>Website Landing Page</h3>
+            <div class="price">Rp 1.200.000</div>
+            <div class="price-desc">Landing page modern, mobile friendly</div>
+          </div>
+          <div class="price-card">
+            <h3>Social Media Kit</h3>
+            <div class="price">Rp 400.000</div>
+            <div class="price-desc">Template feed &amp; story, 5 desain</div>
+          </div>
+        </div>
       </div>
       <div class="section contact" id="kontak">
         <h2>Hubungi Saya</h2>
